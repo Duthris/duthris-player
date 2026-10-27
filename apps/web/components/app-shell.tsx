@@ -233,7 +233,7 @@ export function AppShell({ children, bleed = false }: AppShellProps) {
         <header className="border-border/70 bg-background/80 flex h-14 shrink-0 items-center justify-between border-b px-4 backdrop-blur-xl lg:hidden">
           <Link href="/" className="flex items-center gap-2.5">
             <BrandMark size="sm" />
-            <span className="text-sm font-semibold tracking-tight">Duthris IPTV</span>
+            <span className="text-sm font-semibold tracking-tight">Duthris Player</span>
           </Link>
           <div className="flex items-center gap-1">
             <button

@@ -12,13 +12,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Duthris IPTV",
-    template: "%s · Duthris IPTV",
+    default: "Duthris Player",
+    template: "%s · Duthris Player",
   },
   description:
     "Kendi M3U veya Xtream kaynağınızı ekleyin, canlı TV ve arşivinizi tek yerden izleyin. " +
     "Hesap yok, kayıt yok — tüm verileriniz cihazınızda kalır.",
-  applicationName: "Duthris IPTV",
+  applicationName: "Duthris Player",
   manifest: "/manifest.webmanifest",
 
   icons: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable: true,
-    title: "Duthris IPTV",
+    title: "Duthris Player",
     statusBarStyle: "black-translucent",
   },
   formatDetection: { telephone: false },

@@ -60,7 +60,7 @@ export function useMediaSession({
     navigator.mediaSession.metadata = new MediaMetadata({
       title,
       artist: subtitle ?? "",
-      album: "Duthris IPTV",
+      album: "Duthris Player",
 
       artwork: artwork ? [{ src: artwork, sizes: "512x512" }] : [],
     });

@@ -1,5 +1,5 @@
 appId: dev.duthris.iptv
-productName: Duthris IPTV
+productName: Duthris Player
 copyright: Duthris
 
 directories:
@@ -29,6 +29,9 @@ win:
   artifactName: ${productName}-${version}-${arch}.${ext}
 
   icon: build/icon.ico
+  # Kept from the Duthris IPTV days: the start-at-login entry and existing
+  # shortcuts point at this file, and an update must not break them.
+  executableName: Duthris IPTV
 
   signAndEditExecutable: true
 
@@ -38,7 +41,7 @@ nsis:
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
   createStartMenuShortcut: true
-  shortcutName: Duthris IPTV
+  shortcutName: Duthris Player
 
   installerIcon: build/installerIcon.ico
   uninstallerIcon: build/uninstallerIcon.ico
@@ -52,6 +55,6 @@ portable:
 publish:
   provider: github
   owner: Duthris
-  repo: duthris-iptv
+  repo: duthris-player
   # Publish straight to a visible release; the default leaves it as a draft.
   releaseType: release

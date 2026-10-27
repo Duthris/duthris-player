@@ -56,7 +56,7 @@ function buildTray(): void {
 
   const image = nativeImage.createFromPath(iconPath());
   tray = new Tray(image.isEmpty() ? nativeImage.createEmpty() : image.resize({ width: 16, height: 16 }));
-  tray.setToolTip("Duthris IPTV");
+  tray.setToolTip("Duthris Player");
 
   const show = () => {
     const window = getWindowRef?.() ?? null;
@@ -68,7 +68,7 @@ function buildTray(): void {
 
   tray.setContextMenu(
     Menu.buildFromTemplate([
-      { label: "Duthris IPTV", enabled: false },
+      { label: "Duthris Player", enabled: false },
       { type: "separator" },
       { label: "Göster", click: show },
       {

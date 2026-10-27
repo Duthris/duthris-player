@@ -47,7 +47,7 @@ export function BrandLockup({ className }: { className?: string }) {
       <div className="flex flex-col leading-none">
         <span className="text-md text-foreground font-semibold tracking-tight">Duthris</span>
         <span className="text-2xs text-muted-foreground mt-1 font-medium uppercase tracking-[0.14em]">
-          IPTV
+          Player
         </span>
       </div>
     </div>
