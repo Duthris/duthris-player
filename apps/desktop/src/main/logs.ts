@@ -62,7 +62,7 @@ export async function exportLogs(): Promise<string | null> {
   const stamp = new Date().toISOString().slice(0, 10);
   const result = await dialog.showSaveDialog({
     title: "Günlükleri kaydet",
-    defaultPath: `duthris-iptv-gunluk-${stamp}.log`,
+    defaultPath: `duthris-player-gunluk-${stamp}.log`,
     filters: [{ name: "Günlük", extensions: ["log", "txt"] }],
   });
 

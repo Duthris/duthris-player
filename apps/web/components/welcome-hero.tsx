@@ -84,7 +84,7 @@ export function WelcomeHero({ className }: { className?: string }) {
             <span className="text-gradient-brand">izlemeye başlayın.</span>
           </h1>
           <p className="text-muted-foreground max-w-xl text-sm leading-relaxed">
-            Duthris IPTV bir oynatıcıdır — içerik sağlamaz. M3U bağlantınızı, M3U dosyanızı veya
+            Duthris Player bir oynatıcıdır — içerik sağlamaz. M3U bağlantınızı, M3U dosyanızı veya
             Xtream giriş bilgilerinizi ekleyin, gerisini o halletsin.
           </p>
         </div>

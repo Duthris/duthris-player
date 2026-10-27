@@ -201,7 +201,7 @@ export default function SettingsPage() {
       const stamp = new Date().toISOString().slice(0, 10);
       const link = document.createElement("a");
       link.href = url;
-      link.download = `duthris-iptv-yedek-${stamp}.json`;
+      link.download = `duthris-player-yedek-${stamp}.json`;
       link.click();
       URL.revokeObjectURL(url);
 

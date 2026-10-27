@@ -34,6 +34,11 @@ const isDev = devServer !== null;
 
 let mainWindow: BrowserWindow | null = null;
 
+// The app was called Duthris IPTV until 1.10. Keeping the internal name pins the
+// user data folder (profiles, playlists, credentials), the single-instance lock
+// and the start-at-login entry to where earlier versions put them.
+if (app.isPackaged) app.setName("Duthris IPTV");
+
 if (!app.requestSingleInstanceLock()) {
   app.quit();
 }
@@ -62,7 +67,7 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     backgroundColor: "#0B0911", // tokens.ts > darkTheme.background
-    title: "Duthris IPTV",
+    title: "Duthris Player",
     webPreferences: {
       preload: join(__dirname, "../preload/index.js"),
 

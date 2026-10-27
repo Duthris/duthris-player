@@ -130,7 +130,7 @@ export function parseBackupFile(text: string): BackupFile {
 
   const file = parsed as BackupFile;
   if (!file || file.format !== BACKUP_FORMAT) {
-    throw new BackupError("Bu dosya bir Duthris IPTV yedeği değil.");
+    throw new BackupError("Bu dosya bir Duthris Player yedeği değil.");
   }
   if (file.version > BACKUP_VERSION) {
     throw new BackupError(
